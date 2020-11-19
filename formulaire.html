@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+	<script src="script.js"></script>
+
+	<title>Formulaire</title>
+</head>
+<body onload="init()">
+	<header>
+		
+		<h1>Mon blog personnel</h1>
+
+	</header>
+	<aside class="menu">
+		<h1 style="font-size: 2em;">Menu</h1>
+		<ul>
+			<li>
+				<a href="aceuil.html">
+					<div class="icon">
+						<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+					</div>
+					<div class="name" data-text="home">home</div>
+				</a>
+			</li>
+			<li>
+				<a href="documents.html">
+					<div class="icon">
+						<i class="fa fa-file fa-2x" aria-hidden="true"></i>
+
+					</div>
+					<div class="name" data-text="Documents">Documents</div>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/hamza-moudane-4514821a6/" target="_blank">
+					<div class="icon">
+						<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+
+
+					</div>
+					<div class="name" data-text="My_linkedin">My linkedin</div>
+				</a>
+			</li>
+			<li>
+				<a href="curriculum_vitae.html">
+					<div class="icon">
+						<i class="fa fa-id-card fa-2x" aria-hidden="true"></i>
+
+					</div>
+					<div class="name" data-text="curriculum vitae">Curriculum vitae</div>
+				</a>
+			</li>
+			<li>
+				<a href="formulaire.html">
+					<div class="icon">
+						<i class="fa fa-users fa-2x" aria-hidden="true"></i>
+
+
+					</div>
+					<div class="name" data-text="Formulaire"> Join us</div>
+				</a>
+			</li>
+		</ul>
+	</aside>
+	<main class="contenu">
+		<form  class="from">
+ 
+			<h3>
+			Full name :  <input type="text" name="username" id="name" >
+			</h3>
+		   <h3>
+			Email     :  <input type="email" name="email" id="email" />
+			</h3>
+			<h3>
+			Birthday  :  <input type="date" id="birthday" name="birthday">
+			</h3>
+			<h3>
+				<textarea name="message" id ="message" cols="30" rows="10" ></textarea>
+			</h3> 
+	 
+			<button type="submit" onclick="check()"> send</button>   <!-- ici appel au javascript -->
+			
+		</form>
+	</main>
+	<aside class="sidebar">
+		<h1 style="color: white;">Où me trouver ?</h1>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1453.5222577830928!2d5.437365085875317!3d43.22952631944902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9b9ad0d9ed023%3A0xfddeaef86539f559!2s171%20Avenue%20de%20Luminy%2C%2013009%20Marseille!5e0!3m2!1sfr!2sfr!4v1605719703952!5m2!1sfr!2sfr" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</aside>
+	<footer>
+		<label class="switch">
+			<input type="checkbox" onclick="change1()">
+			<span class="slider round"></span>
+		  </label>
+		<h1>ALL RIGHT RESERVED</h1>
+	</footer>
+</body>
+</html>

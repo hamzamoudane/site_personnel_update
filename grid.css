@@ -1,0 +1,218 @@
+html {
+	font-family: 'Open sans' , 'sans-serif';
+	
+	
+}
+body{
+	margin: 25px auto ;
+	width: 90% ; 
+	background: rgb(99, 122, 115) ;
+
+	display: grid; 
+	grid-template-columns: 1fr 4fr 2fr ;
+	grid-template-areas: 
+		"header header header"
+		"menu main sidebar"
+		"footer footer footer" ;  
+		box-sizing: border-box;
+		width: 100%;
+		border: solid #404b46 10px;
+		border-radius: 10px;
+
+}
+body > * {
+	padding: 20px;
+}
+header{
+	background: rgb(129, 151, 185);
+	color: white;
+	grid-area: header ; 
+}
+
+main {
+	grid-area: main;
+	background: white ;
+	text-align: center;
+
+}
+.from{
+
+	box-shadow:  10px 8px 14px rgb(40, 61, 107);   
+	background-color: rgb(129, 151, 185);
+	width: 60%;
+	position: relative;
+	top: 10%;
+	left: 20%;
+	border-radius: 15px;
+	
+ 
+}
+.from h3{
+	color: white;
+}
+.sidebar{
+	background-color:  darkcyan ;
+	justify-content: space-around;
+
+	grid-area: sidebar ;
+}
+
+.menu {
+	background: darkcyan;
+	color: white;
+	grid-area: menu ;
+
+}
+footer{
+	background: rgb(129, 151, 185);
+	;
+	color: white;
+	grid-area: footer ; 
+}
+.menu ul{
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	height: 80%;
+
+}
+.menu ul li {
+	padding: 10px ; 
+    line-height: 250%;
+}
+.menu ul li a{
+	text-decoration: none; 
+	color: white; 
+}
+.menu ul li a div{
+	font-size: 1.2em;
+}
+h1 {
+	text-align: center;
+
+}
+button {     /* derniere bouton du formlaire .. j'ai copié son code d''un site web   */
+	width: 100px; 
+	border-radius: 6px;
+	font-size: large;
+}
+.switch {			/*la bouton de changement de theme dans le footer.. aussi j'ai copié son code d'un site web  */
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+  }
+  
+  
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+ 
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+  }
+  
+  
+  .slider.round {
+	border-radius: 34px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  }
+  input[type=text] {
+	width: 30%;
+	padding: 8px 12px;
+	margin: 6px 0;
+	box-sizing: border-box;
+	position: relative;
+	left: 5%;
+  }
+  input[type=email] {
+	width: 30%;
+	padding: 8px 12px;
+	margin: 6px 0;
+	box-sizing: border-box;
+	position: relative;
+	left: 8.3%;
+  }
+  input[type=date] {
+	width: 30%;
+	padding: 8px 12px;
+	margin: 6px 0;
+	box-sizing: border-box;
+	position: relative;
+	left: 5.8%;
+  }
+@media(max-width: 1400px ){
+	body{
+		width: 100%;
+		margin: 0;
+	}
+}
+@media(max-width: 900px){
+	body{
+		grid-template-areas: 
+		"header header header"
+		"menu main main"
+		"sidebar sidebar sidebar"
+		"footer footer footer" ;  
+
+	}
+}
+@media(max-width: 600px){
+	body{
+		grid-template-areas: 
+		"header header header"
+		"menu menu menu"
+		"main main main"
+		"sidebar sidebar sidebar"
+		"footer footer footer" ;  
+
+	}
+
+
+iframe{
+	text-align: center;
+	justify-content: space-around;
+}
+
+
+
